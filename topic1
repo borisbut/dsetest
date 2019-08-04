@@ -1,0 +1,123 @@
+\documentclass{beamer}
+\usepackage[T1]{fontenc}
+\usepackage{CJKutf8}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{mathptmx}
+\usepackage{xcolor}
+\setbeamertemplate{items}[square]
+
+\makeatletter
+\setbeamertemplate{itemize subitem}{$\rightarrow$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\providecommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+ % this default might be overridden by plain title style
+ \newcommand\makebeamertitle{\frame{\maketitle}}%
+ % (ERT) argument for the TOC
+ \AtBeginDocument{%
+   \let\origtableofcontents=\tableofcontents
+   \def\tableofcontents{\@ifnextchar[{\origtableofcontents}{\gobbletableofcontents}}
+   \def\gobbletableofcontents#1{\origtableofcontents}
+ }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+% We use the "Berkeley" theme with a 3.45em-wide side bar on the left
+\usetheme[left,width=3.45em]{Berkeley}
+
+\makeatother
+
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}%
+
+\title{Pronun \& Possessive}
+
+\subtitle{HKDSE English}
+
+\author{Boris But\\
+%\begin{CJK*}{UTF8}{bsmi}
+%{\scriptsize {\CJKfamily{bkai}Oral*拉成科*}}
+%\end{CJK*}\\
+}
+
+\date{\today}
+\makebeamertitle
+\begin{frame}
+
+\frametitle<presentation>{Contents}
+
+\tableofcontents{}
+\end{frame}
+
+% \section{Aim}
+% \begin{frame}{Hi}
+
+% \begin{itemize}
+%     \item It's not its
+%     \begin{itemize}
+%         \item You're absolutely right!
+%         \item `Turns' in a sentence
+%         \begin{itemize}
+%             \item A talk may be boring, but if we can invite celebrities along, \underline{that} ... may not be a bad idea.
+%         \end{itemize}
+%     \end{itemize}
+%     \item 's can be has 
+%     \begin{itemize}
+%         \item Don't worry about incomplete sentences
+%         \item For the poster design competition, we can set some judging criteria: theme relevance \begin{CJK*}{UTF8}{bsmi}(扣題)\end{CJK*}, use of colour, popularity: just to name a few aspects.
+%     \end{itemize}
+% \end{itemize}
+% \end{frame}
+
+\section{Contraction}
+\begin{frame}{`It's/he's/she's/sb's/sth's' stand for}
+
+\begin{enumerate}
+    \item It/she/he/sb/sth has (+ past participle)
+        \begin{enumerate}[(a)]
+            \item  \textcolor{red}{This BMW's fast. It's a capable engine.}
+            \item \textcolor{green!60!black}{This BMW's fast. It's \underline{got} a capable engine.}
+            \begin{itemize}
+                \item  SP P1B S1 (\textit{line 12}) It's now up to China to preserve this jewel
+            \end{itemize}
+        \end{enumerate}
+    
+    \item It/she/he/sb/sth is
+        \begin{enumerate}[(a)]
+            \item The BMW engine is worth the cost. It's a capable engine. \textit{Note we avoid using contraction when the noun is compound (BMW engine)}
+        \end{enumerate}
+
+    \item \textcolor{red}{It/she/he/sb/sth was}
+        \begin{enumerate}[(a)]
+            \item Only in informal spoken English
+            \item Always spell out in past tense
+        \end{enumerate}
+    
+    % \href{https://www.youtube.com/channel/UCfagxEtKqhDWxFr-5XBBe4A/feed}{news with subtitles}
+
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Rules for `'d'}
+    \begin{enumerate}
+        \item Attached to all pronouns: I'd/we'd/he'd/they'd etc.
+        \item Attached to some demonstratives: there'd/that'd/this'd
+        \item Meaning \underline{would}
+            \begin{enumerate}[(a)]
+                \item I'd love to meet your partner.
+                \item That'd have to wait until the meeting.
+            \end{enumerate}
+        \item Meaning \underline{had}
+            \begin{enumerate}[(a)]
+                \item Police confirmed she'd been remanded in custody. (past perfect)
+                \item I've planned all this for them. They'd better be on time. (had better = should)
+            \end{enumerate}
+    \end{enumerate}
+
+\end{frame}
+
+
+\end{CJK}
+
+\end{document}
